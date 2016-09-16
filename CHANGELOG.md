@@ -1,3 +1,7 @@
+# v0.4.2 --
+---------------------------
+
+
 # v0.4.1 -- August 28, 2016
 ---------------------------
 All dependencies are up to date with the exception of Babel which I'll tackle

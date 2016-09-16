@@ -5,6 +5,12 @@ This is my "notes to myself" development journal as I worked on this project.
 
 I find this type of thing incredibly useful.
 
+September 4, 2016
+-----------------
+No response at all from original author, going to scrap original tests and
+start over, possibly with a completely different toolchain.
+
+
 August 27, 2016
 ---------------
 

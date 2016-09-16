@@ -14,6 +14,12 @@ import {NavDropdown,
 import StatWidget from "../../../common/StatWidget.js";
 
 class Home extends React.Component {
+  // TODO:
+  // This is wicked ugly.  It attaches a timer to the Home component that
+  // sets this.state.count (the only state element) which is then rendered
+  // by a refrerence to that specific state variable in the child
+  // component.
+  // Works, but damn ugly and not generally useful.
   constructor(props) {
     super(props);
     this.state = {count: 0};
@@ -43,28 +49,31 @@ class Home extends React.Component {
         <div className="row">
           <div className="col-lg-3 col-md-6">
             <StatWidget
-                    style="yellow"
-                    icon="fa fa-comments fa-5x"
-                    count={this.state.count}
-                    headerText="New Comments!"
-                    footerText="View Details"
-                    linkTo="/" />
+                style="yellow"
+                icon="fa fa-comments fa-5x"
+                count={this.state.count}
+                headerText="New Comments!"
+                footerText="View Details"
+                linkTo="/" />
           </div>
           <div className="col-lg-3 col-md-6">
-            <StatWidget style = "red"
-                    icon = "fa fa-tasks fa-5x"
-                    count = "12"
-                    headerText="New Tasks!"
-                    footerText="View Details"
-                    linkTo="/" />
+            <StatWidget
+                style = "red"
+                icon = "fa fa-tasks fa-5x"
+                count = "12"
+                headerText="New Tasks!"
+                footerText="View Details"
+                linkTo="/"
+            />
           </div>
           <div className="col-lg-3 col-md-6">
-            <StatWidget style="warning"
-                    icon="fa fa-shopping-cart fa-5x"
-                    count="124"
-                    headerText="New Orders!"
-                    footerText="View Details"
-                    linkTo="/" />
+            <StatWidget
+                style="warning"
+                icon="fa fa-shopping-cart fa-5x"
+                count="124"
+                headerText="New Orders!"
+                footerText="View Details"
+                linkTo="/" />
           </div>
           <div className="col-lg-3 col-md-6">
             <StatWidget style="danger"
@@ -83,7 +92,10 @@ class Home extends React.Component {
               <i className="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
                   <div className="pull-right">
                       <DropdownButton title="Dropdown" bsSize="xs" pullRight>
-                        <MenuItem eventKey="1">Action</MenuItem>
+                        <MenuItem
+                            eventKey="1">
+                            Action
+                        </MenuItem>
                         <MenuItem eventKey="2">Another action</MenuItem>
                         <MenuItem eventKey="3">Something else here</MenuItem>
                         <MenuItem divider />
