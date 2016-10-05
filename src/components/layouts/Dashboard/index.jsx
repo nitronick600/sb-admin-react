@@ -60,7 +60,7 @@ var HomePage = React.createClass({
                 </Navbar.Header>
                 <Navbar.Collapse>
                 <Nav pullRight>
-                <NavDropdown title=<i className="fa fa-envelope fa-fw"></i> >
+                <NavDropdown id="nav-dropdown-1" title=<i className="fa fa-envelope fa-fw"></i> >
                   <MenuItem eventKey="1">
                     <div> <strong>John Smith</strong> <span className="pull-right text-muted"> <em>Yesterday</em> </span> </div>
                     <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
@@ -81,7 +81,7 @@ var HomePage = React.createClass({
                   </MenuItem>
                 </NavDropdown>
 
-                <NavDropdown title=<i className="fa fa-tasks fa-fw"></i> >
+                <NavDropdown id="nav-dropdown-2" title=<i className="fa fa-tasks fa-fw"></i> >
                   <MenuItem eventKey="1" style={ {width: 300} }>
                     <div>
                       <p> <strong>Task 1</strong> <span className="pull-right text-muted">40% Complete</span> </p>
@@ -123,7 +123,7 @@ var HomePage = React.createClass({
                   </MenuItem>
                 </NavDropdown>
 
-                <NavDropdown title=<i className="fa fa-bell fa-fw"></i> >
+                <NavDropdown id="nav-dropdown-3" title=<i className="fa fa-bell fa-fw"></i> >
                   <MenuItem eventKey="1" style={ {width: 300} }>
                     <div> <i className="fa fa-comment fa-fw"></i> New Comment <span className="pull-right text-muted small">4 minutes ago</span> </div>
                   </MenuItem>
@@ -149,7 +149,7 @@ var HomePage = React.createClass({
                   </MenuItem>
                 </NavDropdown>
 
-                <NavDropdown title=<i className="fa fa-user fa-fw"></i> >
+                <NavDropdown id="nav-dropdown-4" title=<i className="fa fa-user fa-fw"></i> >
                   <MenuItem eventKey="1">
                     <i className="fa fa-user fa-fw"></i> User Profile
                   </MenuItem>

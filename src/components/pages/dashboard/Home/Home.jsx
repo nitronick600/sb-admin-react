@@ -49,7 +49,7 @@ class Home extends React.Component {
         <div className="row">
           <div className="col-lg-3 col-md-6">
             <StatWidget
-                style="yellow"
+                style="warning"
                 icon="fa fa-comments fa-5x"
                 count={this.state.count}
                 headerText="New Comments!"
@@ -58,7 +58,7 @@ class Home extends React.Component {
           </div>
           <div className="col-lg-3 col-md-6">
             <StatWidget
-                style = "red"
+                style = "danger"
                 icon = "fa fa-tasks fa-5x"
                 count = "12"
                 headerText="New Tasks!"
